@@ -6,6 +6,6 @@
 		die();
 	}
 	$img=loadimg($name);
-	addtext($img['img'], $text, $img['basey'],$img['ymax'],$img['maxsize']);
+	addtext($img['img'], $text, $img['basey'],$img['ymax'],$img['maxsize'],$_GET['color']);
 	output($img['img']);
 ?>
