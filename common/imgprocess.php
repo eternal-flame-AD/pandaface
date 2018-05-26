@@ -28,7 +28,7 @@
 			$bbox=imageftbbox($size, 0, "HYH3GJM.TTF", $text);
 			$ylen=$bbox[3]-$bbox[5];
 			$x = $bbox[0] + (imagesx($img) / 2) - ($bbox[4] / 2) - 5;
-			$y = $basey-(ylen/2);
+			$y = $basey-($ylen/2);
 		}
 		$result=imagefttext($img, $size, 0, $x, $y, $black, "HYH3GJM.TTF", $text);
 	}
