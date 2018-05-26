@@ -1,5 +1,9 @@
 <?php
 	function loadimg($fn) {
+		if (strpos($fn,"..") or strpos($fn,"/")) {
+			echo "error:invalid name";
+			die();
+		}
 		$img=imagecreatefromjpeg("img/".$fn.".jpg");
 		if ($img==false) {
 			echo "error:invalid name";
