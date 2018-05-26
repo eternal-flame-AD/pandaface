@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<head>
-	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		function updatepic() {
-			var options=$("#imgid option:selected");
-			var img_obj=$("img");
-			img_obj.attr("src","img/"+options.val()+".jpg");
-		}
-		addEventListener("load",updatepic);
-	</script>
-</head>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			function updatepic() {
+				var options = $("#imgid option:selected");
+				var img_obj = $("img");
+				img_obj.attr("src", "img/" + options.val() + ".jpg");
+			}
+			addEventListener("load", updatepic);
+		</script>
 	</head>
+
 	<body>
 		<form action="api.php" method="get">
 			<select id="imgid" name="name" onchange="updatepic();">
@@ -26,4 +24,5 @@
 		</form>
 		<img id="preview_img"></img>
 	</body>
+
 </html>

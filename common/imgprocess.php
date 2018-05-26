@@ -30,7 +30,7 @@
 			$x = $bbox[0] + (imagesx($img) / 2) - ($bbox[4] / 2) - 5;
 			$y = $basey-(ylen/2);
 		}
-	$result=imagefttext($img, $size, 0, $x, $y, $black, "HYH3GJM.TTF", $text);
+		$result=imagefttext($img, $size, 0, $x, $y, $black, "HYH3GJM.TTF", $text);
 	}
 	function output($img) {
 		header('Content-Type: image/png');
