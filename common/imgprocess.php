@@ -47,7 +47,7 @@
 		$result=imagefttext($img, $size, 0, $x, $y, $color, "STXINWEI.TTF", $text);
 	}
 	function output($img) {
-		header('Content-Type: image/png');
+		header('Content-Type: image/jpeg');
 		imagejpeg($img);
 	}
 ?>
